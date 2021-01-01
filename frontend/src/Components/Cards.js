@@ -1,24 +1,20 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-export const Cards = data => {
+export const Cards = ({ img, name, title }) => {
   return (
     <div>
-      <Card className="my-3 p-3 rounded">
+      <Card className="my-3 p-3 rounded" style={{ width: "15rem" }}>
         <Card.Title as="div">
-          <strong>{data.title}</strong>
+          <strong>{name}</strong>
         </Card.Title>
 
-        <Card.Img src={data.img} variant="top" />
+        <Card.Img src={img} variant="top" width="200rem" height="200em" />
 
         <Card.Body>
           <Card.Title as="div">
-            <strong>{data.title}</strong>
+            <strong>{title}</strong>
           </Card.Title>
-
-          <Card.Text>{data.heading}</Card.Text>
-
-          <Card.Text>{data.text}</Card.Text>
         </Card.Body>
       </Card>
     </div>

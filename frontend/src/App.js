@@ -1,8 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Header } from "./Components/Header";
 import { Container } from "react-bootstrap";
-import { Productlist } from "./Components/Productlist";
+import { Products } from "./Components/Products.jsx";
+import { Footer } from "./Components/Footer";
+
 function App() {
   return (
     <>
@@ -10,8 +11,9 @@ function App() {
         <Header />
       </header>
       <Container>
-        <Productlist />
+        <Products />
       </Container>
+      <Footer />
     </>
   );
 }

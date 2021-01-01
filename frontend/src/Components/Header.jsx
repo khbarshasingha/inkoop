@@ -1,23 +1,36 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { right } from "@popperjs/core";
+import { Row, Col } from "react-bootstrap";
+import "./Header.css";
 
 export const Header = () => {
   return (
     <div className="App-header">
       <Row>
-        <Col className="leftcol">
-          LOREM <br />
-          IPSUM
+        <Col className="leftcol font" variant="top">
+          <b>LOREM IPSUM</b>
         </Col>
-        <Col style={{ paddingLeft: "10rem" }}>LOrem Ipsum Dolor</Col>
+        <Col style={{ paddingLeft: "10rem" }}>
+          LOrem Ipsum Dolor
+          <div>
+            <a href="">Lorem</a>
+            <a href=""> Ipsum </a>
+            <a href=""> Dolor </a>
+          </div>
+        </Col>
       </Row>
       <Row style={{ padding: "2rem" }}>
         <Col style={{ textAlign: "center" }}>
-          removed 50 packages, updated 2 packages and audited 1817 packages in
-          36.87s 125 packages are looking for funding run `npm fund` for details
+          <h4>
+            Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </h4>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page
           <br />
-          <button>HEllo</button>
+          <h1> </h1>
+          <div>
+            <button className="button button-font">Lorem Ipsum</button>
+          </div>
         </Col>
       </Row>
     </div>
